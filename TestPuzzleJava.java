@@ -7,8 +7,12 @@ public class TestPuzzleJava {
 		ArrayList<Integer> randomRolls = generator.getTenRolls();
 		System.out.println(randomRolls);
 		
-    	//..
-		// Write your other test cases here.
-		//..
+    System.out.println(generator.getRandomLetter());
+    System.out.println(generator.generatePassword());
+    int num=5;
+    String [] test = generator.getNewPasswordSet(num);
+    for( int i=0; i<test.length; i++){
+      System.out.println(test[i]);
+    }
 	}
 }
